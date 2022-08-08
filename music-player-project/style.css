@@ -1,0 +1,891 @@
+/* this is for the background of this page */
+.background {
+    background-position: 100%;
+    height:100%;
+    width:100%;
+    background-size: contain;
+    position: fixed;	
+}
+/* here the navigation bar starts */
+.nav-bar{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    height:25%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position:absolute;
+    top:0px;
+    right:0px;
+    box-sizing: border-box;
+}
+ul{
+   list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+.logo img{
+    position:absolute;
+    top:23%;
+    left:10%;
+    height:65%;
+    display:flex;
+    border-radius:90%;
+}
+.title h1{
+    color: rgb(163, 226, 228);
+    font-size:30px;
+    font-weight: 700;
+    font-family:sans-serif;
+    position: absolute;
+    top:25%;
+    left:20%;
+}   
+.title h4{
+    color: wheat;
+    position:absolute;
+    top:53%;
+    left:20%;
+}
+/* this is transition for the favs */
+@keyframes flexible {
+	0% {
+		transform: rotate(0deg);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+	75% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1.2);
+	}
+}
+
+.favs h3{
+    font-size: 28px;
+    font-family:cursive;
+    font-style: oblique;
+    color:rgb(249, 252, 252);
+   position: absolute;
+   left:48%;
+   top:32%; 
+   animation-name: flexible;
+   animation-timing-function: ease-in-out;
+   animation-duration: 2s;
+   perspective: 10000px;
+   transform-style: preserve-3d;
+   animation-iteration-count: infinite;
+}
+/* this is the transitin for the ringing bell */
+@keyframes ringingbell{
+    0%{
+        transform:rotate(15deg);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(15deg);
+    }
+}
+.bell img{
+    position: absolute;
+     right:27%;
+     top:47%;
+    height:100px;
+    width:10%;
+    height:50px;
+    width: 60px;
+    border-radius: 110%;
+    animation-name: ringingbell;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+/* for the profile */
+@keyframes move{
+   50%{
+       transform: scale(0.3);
+   }
+   100%{
+       transform: scale(0.8);
+   }
+}
+.profile img{
+    height:50px;
+    width: 60px;
+    border-radius: 100%;
+    position: absolute;
+    right:9%;
+    top:45%;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.profile h5{
+    position: absolute;
+    right:29.5%;
+    top:69%;
+    right:10%;
+    color: cornsilk;
+    font-family: monospace;
+    font-family: sans-serif;
+}
+
+/* second part of the page starts */
+/* put the cursor on the image and see the transition */
+.carousel{
+    position: absolute;
+    left: 2%;
+    top:155%;
+    width: 72%;
+    height:66%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	overflow: visible;
+    width: 100%;
+	padding: 0% 3%;
+	box-sizing: border-box;
+	display: flex;
+    transition: all ease-in-out 1s;
+    cursor: copy;
+  }
+  .carousel img{
+    border-radius: 20px;
+    transition: all cubic-bezier(0.68, 0.55, 0.265, 1.55) 0.2s;
+    height: 280px;
+    width: 280px;
+  }
+.carousel img:hover {
+	z-index: 4;
+    box-shadow: 19px 25px 50px 0.1px rgb(131, 98, 98);
+	height: 330px;
+    width: 330px;
+    transform:scale(0.2 times);
+    transition: all .2s ease-in-out; 
+  } 
+/* animation for the heading */
+ @keyframes heading{
+    75%{
+        transform: scaleX(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+ }
+  .heading{
+    font-weight: bolder;
+    font-size: 38px;
+    color: rgb(236, 198, 236);
+    font-family:cursive;
+    position: absolute;
+    top:400%;
+    
+    animation-name: heading;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+/* latest release part */
+.first{
+    display:flex;
+   height:180px;
+   width:350px;
+   margin: 0%;
+   padding:0%;
+}
+
+.first img{
+    height:150px;
+    width:150px;
+    position: absolute;
+    top:500%;
+    left:5%;
+}
+.first-title{
+    color:rgb(243, 223, 223);
+    position: absolute;
+    top:500%;
+    left:22%;
+    font-size: 22px;
+    
+}
+.first-desc{
+    color:rgb(182, 230, 230);
+     font-size: 12px;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     position:absolute;
+     top:530%;
+     left:23%;
+}
+.second img{
+    height:150px;
+    width:150px;
+    position: absolute;
+    top:620%;
+    left:5%;
+}
+.second-title{
+    color:rgb(243, 223, 223);
+    position: absolute;
+    top:610%;
+    left:22%;
+    font-size: 22px;
+}
+.second-desc{
+    color:rgb(182, 230, 230);
+     font-size: 12px;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     position:absolute;
+     top:640%;
+     left:23%;
+}
+.third img{
+    height:150px;
+    width:150px;
+    position: absolute;
+    top:740%;
+    left:5%;
+}
+.third-title{
+    color:rgb(243, 223, 223);
+    position: absolute;
+    top:730%;
+    left:22%;
+    font-size: 22px;
+}
+.third-desc{
+    color:rgb(182, 230, 230);
+     font-size: 12px;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     position:absolute;
+     top:760%;
+     left:23%;
+}
+
+.forth img{
+    height:150px;
+    width:150px;
+    position: absolute;
+    top:500%;
+    left:40%;
+}
+.forth-title{
+    color:rgb(243, 223, 223);
+    position: absolute;
+    top:500%;
+    left:58%;
+    font-size: 22px;
+}
+.forth-desc{
+    color:rgb(182, 230, 230);
+     font-size: 12px;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     position:absolute;
+     top:530%;
+     left:59%;
+}
+.fifth img{
+    height:150px;
+    width:150px;
+    position: absolute;
+    top:620%;
+    left:40%;
+}
+.fifth-title{
+    color:rgb(243, 223, 223);
+    position: absolute;
+    top:610%;
+    left:58%;
+    font-size: 22px;
+}
+.fifth-desc{
+    color:rgb(182, 230, 230);
+     font-size: 12px;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     position:absolute;
+     top:640%;
+     left:59%;
+}
+.sixth img{
+    height:150px;
+    width:150px;
+    position: absolute;
+    top:740%;
+    left:40%;
+}
+.sixth-title{
+    color:rgb(243, 223, 223);
+    position: absolute;
+    top:730%;
+    left:58%;
+    font-size: 22px;
+}
+.sixth-desc{
+    color:rgb(182, 230, 230);
+     font-size: 12px;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     position:absolute;
+     top:760%;
+     left:59%;
+}
+/* popular artists part start 
+click on any image and there is single playlist  */
+.popular-artists a{
+    color:white;
+} 
+.popular-artists img:hover{
+    opacity:0.5;
+    transition: opacity ease-in-out 0.1s;
+}
+@keyframes heading{
+    75%{
+        transform: scaleX(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+ }
+  .popular-artist-title{
+    font-weight: bolder;
+    font-size: 38px;
+    color: rgb(236, 198, 236);
+    font-family:cursive;
+    position: absolute;
+    top:870%;
+    animation-name: heading;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.artist1 img{
+    position:absolute;
+    top:960%;
+    left:5%;
+    height:200px;
+    width:200px;
+    border-radius: 90%;
+}
+.artist1-title{
+    position: absolute;
+    top:1085%;
+    left:10%;
+}
+.artist2 img{
+    position:absolute;
+    top:960%;
+    left:22%;
+    height:200px;
+    width:200px;
+    border-radius: 90%;
+}
+.artist2-title{
+    position: absolute;
+    top:1085%;
+    left:27%;
+}
+.artist3 img{
+    position:absolute;
+    top:960%;
+    left:39%;
+    height:200px;
+    width:200px;
+    border-radius: 90%;
+}
+.artist3-title{
+    position: absolute;
+    top:1085%;
+    left:42%;
+}
+.artist4 img{
+    position:absolute;
+    top:960%;
+    left:57%;
+    height:200px;
+    width:200px;
+    border-radius: 90%;   
+}
+.artist4-title{
+    position: absolute;
+    top:1085%;
+    left:61%;
+}
+.artist5 img{
+    position:absolute;
+    top:1120%;
+    left:5%;
+    height:200px;
+    width:200px;
+    border-radius: 90%; 
+}
+.artist5-title{
+    position: absolute;
+    top:1250%;
+    left:8%;
+}
+.artist6 img{
+    position:absolute;
+    top:1120%;
+    left:22%;
+    height:200px;
+    width:200px;
+    border-radius: 90%;
+}
+.artist6-title{
+    position: absolute;
+    top:1250%;
+    left:26%;
+}
+.artist7 img{
+    position:absolute;
+    top:1120%;
+    left:39%;
+    height:200px;
+    width:200px;
+    border-radius: 90%;   
+}
+.artist7-title{
+    position: absolute;
+    top:1250%;
+    left:44%;
+}
+.artist8 img{
+    position:absolute;
+    top:1120%;
+    left:57%;
+    height:200px;
+    width:200px;
+    border-radius: 90%;
+}
+.artist8-title{
+    position: absolute;
+    top:1250%;
+    left:61%;
+}
+/* ststions section starts */
+/* love pop retro chill party */
+.stations{
+     font-size: 23px;
+     font-family: 'Times New Roman', Times, serif;
+     position: absolute;
+     top:1369%;
+    
+}  
+/* thess are for the block of stations part */
+/* green yellow orange part */
+/* hover for every image on this theme */
+#div1 {
+	width: 12vw;
+	height: 8vw;
+	background-color: yellow;
+}
+#div2 {
+	position: relative;
+	top: -1vw;
+	left: 1vw;
+	width: 10vw;
+	height: 10vw;
+	background-color: yellowgreen;
+}
+#div3 {
+	position: relative;
+	top: -1vw;
+	left: 1vw;
+	width: 8vw;
+	height: 12vw;
+	background-color: orangered;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.music-theme img:hover{
+    opacity:0.5;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.music-theme img{
+     height:120px;
+     width:120px;
+     position:absolute;
+     border-radius: 70%;
+     margin:2%;
+     background: linear-gradient(red,yellow,orange);
+}
+.music-theme h2{
+    color:rgb(255, 255, 255);
+    font-family:serif;
+    position:absolute;
+    font-size: 26px;
+}
+.theme1 img{ 
+       top:1340%;
+       left:18%;
+}
+.theme1 h2{
+  top:1349%;
+  left:22%;
+}
+.theme2 img{
+    top:1339%;
+    left:28%;
+}
+.theme2 h2{
+   top:1348%;
+    left:33%;
+}
+.theme3 img{
+    top:1339%;
+    left:37.5%;
+}
+.theme3 h2{
+   top:1348%;
+    left:42%;
+}
+.theme4 img{
+    top:1339%;
+    left:47%;
+}
+.theme4 h2{
+    top:1348%;
+    left:51%;
+}
+.theme5 img{
+    top:1339%;
+    left:57%;
+}
+.theme5 h2{
+    top:1348%;
+    left:61%;
+} 
+/* music theme part starts */
+/* electronic party road  */
+/* there is hover for every image of theme 2 */
+.music-theme2 img:hover{
+    opacity: 0.5;
+    color:rgb(158, 90, 0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
+.music-theme2{
+   margin-left:1%;
+   position:absolute;
+   top:1525%;
+   height:150px;
+   width:130px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    padding:0%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    .music-theme2 h4{
+        font-size: 28px;
+        font-weight: 25px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        position: relative;
+        left:-150px;
+        align-items: baseline;
+     }
+    @keyframes heading{
+        75%{
+            transform: scaleX(0.9);
+        }
+        100%{
+            transform: scale(1);
+        }
+     }
+     /* starting of the latest english part */
+     /* five images on this */
+ /* hover on every image */
+.latest-english {
+        position: relative;
+        margin-top:2260px;
+        font-weight: bolder;
+        font-size: 28px;
+        color: rgb(236, 198, 236);
+        font-family:cursive;        
+        animation-name:heading;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+}
+  .english-content div img{
+      height:180px;
+      width:170px;
+      border:2px solid rgb(233, 166, 166); 
+      transition: box-shadow ease-in-out 0.1s;
+  }  
+  .english-content div img:hover {
+	box-shadow: 0px 0px 10px 5px white;
+}
+.english1{
+    position: absolute;
+     top:1780%;
+     left:50px;
+}
+.english2{
+    position: absolute;
+    top:1780%;
+     left:240px;
+}
+.english3{
+    position: absolute;
+    top:1780%;
+     left:430px;
+}
+.english4{
+    position: absolute;
+    top:1780%;
+     left:620px;
+}
+.english5{
+    position: absolute;
+    top:1780%;
+     left:812px;
+}
+/* animation on latest hindi */
+@keyframes heading{
+    75%{
+        transform: scaleX(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+ }
+ /* here latest hndi part start */
+ /* five images on this */
+ /* hover on every image */
+.latest-hindi {
+    position: absolute;
+    top:3000px;
+    font-weight: bolder;
+    font-size: 29px;
+    color: rgb(236, 198, 236);
+    font-family:cursive;        
+    animation-name:heading;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.hindi-content div img{
+    height:180px;
+    width:170px;
+    border:2px solid rgb(233, 166, 166); 
+    transition: box-shadow ease-in-out 0.1s;
+}  
+.hindi-content div img:hover {
+  box-shadow: 0px 0px 10px 5px white;
+}
+.hindi1{
+  position:absolute;
+  top:2070%;
+  left:5%;
+}
+.hindi1{
+    position:absolute;
+    top:2070%;
+    left:50px;
+  }
+.hindi2{
+    position:absolute;
+    top:2070%;
+    left:240px;
+  }
+.hindi3{
+    position:absolute;
+    top:2070%;
+    left:430px;
+  }
+.hindi4{
+    position:absolute;
+    top:2070%;
+    left:620px;
+  }
+.hindi5{
+    position:absolute;
+    top:2070%;
+    left:812px;
+  }
+/* Here is the aside section starts */
+/* which is the playlist section */
+.queue h1{
+    position: absolute;
+    top:230px;
+    right:11%;
+    font-size: 32px;
+    color: rgb(241, 157, 157);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.song1::before{
+    content: "1.";
+    position: absolute;
+    right:26%;
+    top:380px;
+    font-size: 28px;
+}
+.song1 img{
+    height:120px;
+    width:120px;
+    position: absolute;
+    top:360px;
+    right:16%;
+}
+.song1 h3{
+      font-size: 26px;
+      position: absolute;
+      top:340px;
+      right:5%;
+}
+.song1 p{
+       font-size:15px;
+       position: absolute;
+       top:390px;
+       right:6%;
+}
+.song2::before{
+    content: "2.";
+    position: absolute;
+    right:26%;
+    top:550px;
+    font-size: 28px;
+}
+.song2 img{
+    height:120px;
+    width:120px;
+    position: absolute;
+    top:530px;
+    right:16%;
+}
+.song2 h3{
+      font-size: 26px;
+      position: absolute;
+      top:520px;
+      right:5%;
+}
+.song2 p{
+       font-size:15px;
+       position: absolute;
+       top:570px;
+       right:6%;
+}
+.song3::before{
+    content: "3.";
+    position: absolute;
+    right:26%;
+    top:720px;
+    font-size: 28px;
+}
+.song3 img{
+    height:120px;
+    width:120px;
+    position: absolute;
+    top:700px;
+    right:16%;
+}
+.song3 h3{
+      font-size: 26px;
+      position: absolute;
+      top:690px;
+      right:5%;
+}
+.song3 p{
+       font-size:15px;
+       position: absolute;
+       top:740px;
+       right:6%;
+}
+.song4::before{
+    content: "4.";
+    position: absolute;
+    right:26%;
+    top:890px;
+    font-size: 28px;
+}
+.song4 img{
+    height:120px;
+    width:120px;
+    position: absolute;
+    top:870px;
+    right:16%;
+}
+.song4 h3{
+      font-size: 26px;
+      position: absolute;
+      top:850px;
+      right:5%;
+}
+.song4 p{
+       font-size:15px;
+       position: absolute;
+       top:900px;
+       right:6%;
+}
+.song5::before{
+    content: "5.";
+    position: absolute;
+    right:26%;
+    top:1070px;
+    font-size: 28px;
+}
+.song5 img{
+    height:120px;
+    width:120px;
+    position: absolute;
+    top:1050px;
+    right:16%;
+}
+.song5 h3{
+      font-size: 26px;
+      position: absolute;
+      top:1040px;
+      right:2%;
+}
+.song5 p{
+       font-size:15px;
+       position: absolute;
+       top:1090px;
+       right:6%;
+}
+.song6::before{
+    content: "6.";
+    position: absolute;
+    right:26%;
+    top:1240px;
+    font-size: 28px;
+}
+.song6 img{
+    height:120px;
+    width:120px;
+    position: absolute;
+    top:1220px;
+    right:16%;
+}
+.song6 h3{
+      font-size: 26px;
+      position: absolute;
+      top:1200px;
+      right:5%;
+}
+.song6 p{
+       font-size:15px;
+       position: absolute;
+       top:1250px;
+       right:6%;
+}
+/* here the bottom part of the player */
+/* controls pf the player */
+.bottom img{
+    height:80px;
+    width:780px;
+    position: fixed;
+    bottom:2px;
+    left:460px;
+}
+.control img{
+    height:80px;
+    width:450px;
+    position: fixed;
+    bottom:2px;
+    left:20px;   
+}

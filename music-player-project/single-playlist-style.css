@@ -1,0 +1,329 @@
+/*  the background of the single playlist */
+body{
+    background:url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* this is all about header section */
+.header{
+    color:rgb(228, 235, 235);
+     background-color: rgb(0, 32, 73);
+     border:1px solid wheat;
+     box-shadow:7px 8px 10px white;
+     height:300px;
+     width:860px;
+     margin:40px;
+}
+.header img{
+    height:270px;
+    width:220px;
+    position: absolute;
+    top:11%;
+    left:6%;
+}
+.header h1{
+     position: absolute;
+     top:7%;
+     left:33%;
+     font-size: 30px;
+     font-weight: 500;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+.header p{
+    position: absolute;
+    top:18%;
+    left:24%;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: monospace;
+    word-break:keep-all;
+}
+.header h4{
+    position: absolute;
+    top:26%;
+    left:33%;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* the part of buttons
+linear gradients are use to make it look better  */
+#play{
+     position: absolute;
+     top:45%;
+     left :26%;
+     font-size: 30px;
+     background:linear-gradient(red,yellow);
+}
+#follow{
+    position: absolute;
+    top:45%;
+    left :41%;
+    font-size: 26px;
+    background:linear-gradient(white,blue);
+}
+.single-playlist{
+    color:whitesmoke;
+    background-repeat: no-repeat;
+    background: fixed;    
+    padding:60px;
+    align-content: :space-between;
+}
+.single-playlist img{
+    height:70px;
+    width:70px; 
+}
+.item1::after{
+    content:"+";
+    position: absolute;
+    top:450px;
+    left:850px;
+    font-size:40px;
+    font-weight: bolder;
+}
+.item1{
+    border:2px solid rgba(7, 0, 12, 0.514);
+    width:70%;
+}
+.item1:hover{
+    background-color: brown;
+}
+.item1 h3{
+    position: absolute;
+    top:450px;
+    left:200px; 
+}
+.item1 p{
+    position: absolute;
+    top:460px;
+    left:600px;   
+}
+.item2::after{
+    content:"+";
+    position: absolute;
+    top:530px;
+    left:850px;
+    font-size:40px;
+    font-weight: bolder;
+}
+.item2{
+    border:2px solid rgba(7, 0, 12, 0.514);
+    width:70%;
+}
+.item2:hover{
+    background-color: brown;
+}
+.item2 h3{
+    position: absolute;
+    top:520px;
+    left:200px; 
+}
+.item2 p{
+    position: absolute;
+    top:530px;
+    left:600px;   
+}
+.item3::after{
+    content:"+";
+    position: absolute;
+    top:600px;
+    left:850px;
+    font-size:40px;
+    font-weight: bolder;
+}
+.item3{
+    border:2px solid rgba(7, 0, 12, 0.514);
+    width:70%;
+}
+.item3:hover{
+    background-color: brown;
+}
+.item3 h3{
+    position: absolute;
+    top:595px;
+    left:200px; 
+}
+.item3 p{
+    position: absolute;
+    top:600px;
+    left:600px;   
+}
+.item4::after{
+    content:"+";
+    position: absolute;
+    top:675px;
+    left:850px;
+    font-size:40px;
+    font-weight: bolder;
+}
+.item4{
+    border:2px solid rgba(7, 0, 12, 0.514);
+    width:70%;
+}
+.item4:hover{
+    background-color: brown;
+}
+.item4 h3{
+    position: absolute;
+    top:670px;
+    left:200px; 
+}
+.item4 p{
+    position: absolute;
+    top:670px;
+    left:600px;   
+}
+.item5::after{
+    content:"+";
+    position: absolute;
+    top:750px;
+    left:850px;
+    font-size:40px;
+    font-weight: bolder;
+}
+.item5{
+    border:2px solid rgba(7, 0, 12, 0.514);
+    width:70%;
+}
+.item5:hover{
+    background-color: brown;
+}
+.item5 h3{
+    position: absolute;
+    top:740px;
+    left:200px; 
+}
+.item5 p{
+    position: absolute;
+    top:750px;
+    left:600px;   
+}
+
+/* this is the aside section of single playlist */
+/* similar artists section */
+.aside1 h2{
+    position: absolute;
+    top:40px;
+    right:170px;
+    color:rgb(179, 231, 233);
+    font-size:30px;
+    font-variant: normal;
+}
+.img1 img{
+    height:100px;
+    width:100px;
+    position: absolute;
+    top:130px;
+    right:250px;
+}
+.img1 h4{
+    position: absolute;
+    right:139px;
+    top:110px;
+    color:cornsilk;
+    font-size: 22px;
+}
+.img1 p{
+    position: absolute;
+    right:149px;
+    top:155px;
+    color:cornsilk;
+    font-size: 19px;
+}
+.img2 img{
+    height:100px;
+    width:100px;
+    position: absolute;
+    top:248px;
+    right:250px;
+}
+.img2 h4{
+    position: absolute;
+    right:139px;
+    top:220px;
+    color:cornsilk;
+    font-size: 22px;
+}
+.img2 p{
+    position: absolute;
+    right:149px;
+    top:268px;
+    color:cornsilk;
+    font-size: 19px;
+}
+/* here is the another section starts */
+/* recently played section */
+.aside1 h3{
+    position: absolute;
+    top:400px;
+    right:170px;
+    color:rgb(179, 231, 233);
+    font-size:30px;
+    font-variant: normal;
+}
+.img3 img{
+    height:100px;
+    width:100px;
+    position: absolute;
+    top:500px;
+    right:260px;
+}
+.img3 h4{
+    position: absolute;
+    right:139px;
+    top:480px;
+    color:cornsilk;
+    font-size: 22px;
+}
+.img3 p{
+    position: absolute;
+    right:149px;
+    top:530px;
+    color:cornsilk;
+    font-size: 19px;
+}
+.img4 img{
+    height:100px;
+    width:100px;
+    position: absolute;
+    top:620px;
+    right:260px;
+}
+.img4 h4{
+    position: absolute;
+    right:139px;
+    top:600px;
+    color:cornsilk;
+    font-size: 22px;
+}
+.img4 p{
+    position: absolute;
+    right:149px;
+    top:647px;
+    color:cornsilk;
+    font-size: 19px;
+}
+.img5 img{
+    height:100px;
+    width:100px;
+    position: absolute;
+    top:740px;
+    right:260px;
+}
+.img5 h4{
+    position: absolute;
+    right:139px;
+    top:719px;
+    color:cornsilk;
+    font-size: 22px;
+}
+.img5 p{
+    position: absolute;
+    right:149px;
+    top:765px;
+    color:cornsilk;
+    font-size: 19px;
+}
+
+/* END OF THE PROJECT */
